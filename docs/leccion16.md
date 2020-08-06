@@ -1,0 +1,30 @@
+---
+title: Combinar schematics
+description: 'Es posible combinar schematics, tanto custom como los que existen en el CLI '
+published: true
+index: 16
+slugs: combinar-schematics-con-los-metodos-de-la-API
+---
+
+# Lección 16 - Combinar schematics
+
+## Combinar schematics customizados
+
+Una de las ventajas de Schematics, es que los schematics se pueden combinar o encadenar entre si. 
+
+Esto supone que podemos escribir factorías una única vez, y combinarlas con otros schematics de diferentes maneras, ganando en tiempo y productividad
+
+## Combinar schematics del CLI
+
+¡También los schematics del cli, se pueden encadenar a los custom que escribamos!
+
+Esto nos permite crear cadenas muy poderosas con código ya escrito y validado.
+
+En el gist de ejemplo se ve como se encadenan 3 schematics. Nuestro schematic en blanco, con nuestro schematic avanzado, con el schematic externo para generar componentes, de Angular
+
+<script src="https://gist.github.com/anfibiacreativa/b2bb69cb0bd34d95f0b328ef26b754a7.js"></script>
+
+## Tarea 
+
+1. Escribe tu propia cadena de schematics usando un schematic externo de Angular. Ejecutalo.
+ 
