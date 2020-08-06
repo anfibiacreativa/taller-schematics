@@ -28,6 +28,8 @@ Esta es una buena manera de entender todas las utilidades para cadenas de texto 
 
 📌 Haz `check out` de la rama `feature/leccion11`, para ver el código
 
+https://github.com/anfibiacreativa/mi-schematic-paisa/compare/feature/leccion11?expand=1
+
 ## ¿Qué es el modo debug?
 
 Ahora que tenemos un schematic un poco más sofisticado, es hora de verlo en acción.
