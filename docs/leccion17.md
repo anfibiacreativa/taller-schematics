@@ -10,7 +10,11 @@ slugs: publicar-librerias-en-npm-schematics-ng-add
 
 ## ¿Qué es una librería?
 
- ttt
+ La pregunta debería ser, qué califica cómo librería? Cualquier codigo complejo y reutilizable, tiene potencialmente carácter de librería. 
+
+ Es deseable poder empaquetarlo y reutilizarlo, no solo en un proyecto concreto, sino a través de proyectos de una misma organización o incluso como artefactos de distribución, ya sea propietarios o de código abierto.
+
+ A lo mejor piensas que una librería tiene que ser un framework o un producto, pero no es así. Hay muchas utilidades que te puede venir bien subir a un nivel más alto de abtracción, para reutilizar con más facilidad.
 
  ## Repasemos conocimientos de npm
 
@@ -18,6 +22,10 @@ slugs: publicar-librerias-en-npm-schematics-ng-add
 
  ## Versionado semántico
 
+ ttt
+
+ ## Escribamos la librería
+ 
  ttt
 
  ## Publiquemos la librería
