@@ -12,11 +12,17 @@ slugs: validar-los-schematics-schema
 
 El schema.json, es un objeto json que establece un conjunto de elementos de validación del schemtic y sus propiedades.
 
-No solo puedes darle un nombre, una descripción, sino definir como se cargan (por ejemplo como argumento vector (`argv`) en el CLI) y su posición (empezando de 0), y además, su tipo
+No solo puedes darle un nombre, una descripción, sino definir el valor por defecto. En nuestro ejemplo, el mismo es el argumento vector (`argv`) en la posición establecida (empezando de 0).
 
 ## Tipos
 
-Los argumentos pueden tener todos los tipos primitivos o incluso se puede definir un arreglo de subtipos, para los mismos
+Los argumentos pueden tener todos los tipos primitivos o incluso se puede definir un arreglo de subtipos, para los mismos.
+
+## Modelo
+
+Una buena práctica a la hora de validar nuestro schema, es declarar un modelo. Si te has fijado, cuando se genera el schematic en blanco, las opciones tienen como tipo `any` . Eso es porque dependiendo de la implementación, el tipo que tendrán las opciones.
+
+Cuando hagas check-out del código de esta lección, fijate en el archivo 
 
 ## Parámetros y opciones
 
@@ -28,7 +34,7 @@ Por ejemplo, en el caso del nombre del fichero o path, de la lección 11.
 
 ## Tarea 
 
-Haz checkout de la rama `feature/leccion13`. No te olvides de correr `npm run build` para compilar los cambios.
+1. Haz checkout de la rama `feature/leccion13`. No te olvides de correr `npm run build` para compilar los cambios.
 
 Inspecciona los cambios en la factoria, a la vez que revisas el nuevo fichero, `schema.json`
 
@@ -44,5 +50,10 @@ Ahora corre
 
 ¿Qué ha cambiado?
 
+2. Ahora corre 
 
- 
+```$ schematics .:mi-schematic-paisa --path=medellin --message --dry-run=false```
+
+¡Oh no! ¡Un error en la consola! El fichero ya existe y no se puede ejecutar el schematic.
+
+Escribe la excepción que se asegurará de que este error no ocurra en tu propio schematic. Si te bloqueas, pudes verlo haciendo check-out de la rama `feature/leccion13-exception`
