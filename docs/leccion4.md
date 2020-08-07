@@ -12,6 +12,8 @@ slugs: vocabulario-schematics
 
 (Tree o source), es el sistema de archivos VIRTUAL, compuesto de la base (los archivos que existen) y el area de staging (donde ocurren las transformaciones).
 
+En realidad, cuando creamos archivos para ser copiados por nuesro schematic, creamos una carpeta `/files` en la raíz del schematic. La llamamos así porque el compilador ignora esa carpeta, pero podemos llamarla de cualquier manera, siempre y cuando reconfiguremos el compilador para que la ignore
+
 ## Rule{}
 
 Define una función que toma como argumento un árbol y devuelve otro árbol (source o tree), después de aplicarle una serie de transformaciones
