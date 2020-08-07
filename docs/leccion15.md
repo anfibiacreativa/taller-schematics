@@ -49,3 +49,9 @@ Pueden también volver a las lecciones 7 y 8, para refrescar la memoria en cuant
 A partir de aquí les propongo intentar solucionar el problema solos.
 
 ¡Luego, lo resolveremos juntos!
+
+## Tarea
+
+Una vez hayamos terminado de resolver el ejercicio juntos, puedes hacer check-out de la rama `feature/leccion15`, para examinar el código.
+
+Compara con tu solución, o si no lo habías logrado, apunta tus preguntas.
