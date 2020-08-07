@@ -1,30 +1,45 @@
 ---
-title: Escribir nuestro schematic customizado
-description: '¡Ya es hora de escribir un schematic para resolver un problema concreto! '
+title: Ejecutemos el Schematic desde nuestra app
+description: 'Los schematics son realmente potentes herramientas de flujo de trabajo, para modificar nuestro workspace. ¡Veamoslo!'
 published: true
 index: 12
-slugs: resolviendo-problemas-de-la-vida-real-con-schematics
+slugs: ejecutemos-nuestro-schematic
 ---
 
-# Lección 12 - Nuestro primer schematic customizado
+# Lección 12 - Ejecutar nuestro schematic desde una applicación Angular
 
-## Planteemos un problema
+Hasta ahora hemos ejecutado nuestro schematic exclusivamente desde el schematics-CLI. Antes de agregar complejidad a nuestro código, vamos a aprender a ejecutarlo dedsde una aplicación Angular. Así podremos enfocarnos en esos aspectos.
 
-ttt
+## Creemos la aplicación
 
-## Definamos la solución
+ Para eso vamos a necesitar una aplicación Angular. Creemosla con el CLI, ejecutando Schematics, con 
 
-ttt
+```$  ng new [appName]```
 
-## Manos a la obra con nuestro schematic
+No debemos olvidar de compilar el paquete de nuestro schematic para que transpilen los cambios, con
 
-Lo primero que vamos a hacer, es comprobar que verdaderamente estamos en un proyecto Angular, ya que si no, no debería ejecutarse el Schematic.
+```$ npm run build```
 
-A partir de aquí les propongo intentar solucionar el problema solos. ¡Tienen 30 minutos! 
+Además  debemos enlazar el módulo de npm, para poder ejecutarlo en el workspace de la aplicación. 
 
-### Recuerden lo que tienen que lograr
-- punto 1
-- punto 2
-- punto 3
+```$ npm link```
+[Más documentación](https://docs.npmjs.com/cli/link)
 
-¡Luego, lo resolveremos juntos!
+Recordemos que esto es un truco para poder ejecutarlo en local, sin publicar el módulo.En la vida real, probablmente usemos
+
+```$ ng add [moduleName]```
+
+Eejecutemos nuestro schematic con el comando
+
+```$ ng generate collection:factory```
+
+en nuestro caso
+
+```$ ng generate miSchematicPaisa:miSchematicPaisa```
+
+## Tarea
+
+1. Revisa los artefactos generados
+2. Haz check-out de la rama `feature/leccion12`. Mira la comprobación que se hace para verificar que estamos realmente en un workspace de Angular. ¡Te servirá más adelante para completar el ejercicio más importante del taller!
+
+---
