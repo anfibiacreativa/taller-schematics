@@ -1,40 +1,51 @@
 ---
-title: Ejecutemos el Schematic desde nuestra app
-description: 'Los schematics son realmente potentes herramientas de flujo de trabajo, para modificar nuestro workspace. ¡Veamoslo!'
+title: Escribir nuestro schematic customizado
+description: '¡Ya es hora de escribir un schematic para resolver un problema concreto! '
 published: true
 index: 15
-slugs: ejecutemos-nuestro-schematic
+slugs: resolviendo-problemas-de-la-vida-real-con-schematics
 ---
 
-# Lección 15 - Ejecutar nuestro schematic desde una applicación Angular
+# Lección 15 - Nuestro primer schematic customizado
 
-## Creemos la aplicación
+## Planteemos un problema
 
- Para eso vamos a necesitar una aplicación Angular. Creemosla con el CLI, ejecutando Schematics, con 
+A la hora de crear un proyecto, me gusta que la estructura esté bien organizada. Me gusta separar los artefactos por tipo, en carpetas dedicadas. Así, prefiero que todos los componentes se organicen en una carpeta de `componentes`, los servicios en una de `servicios`, y así sucesivamente.
 
-```$  ng new [appName]```
+Pero es una tarea tediosa y consume mucho tiempo, si la hacemos manualmente. Ni que decir que si trabajamos en equipos grandes y remotos, seguro que alguien creará un montón de archivos fuera de una carpeta organizadora.
 
-No debemos olvidar de compilar el paquete de nuestro schematic para que transpilen los cambios, con
+Otro problema es cómo nombramos las carpetas. A mi me gusta que se escriba todo en minuscula, para ajustarme a mis convenciones de BEM (¡tengo una fuerte opinión al respecto!)
 
-```$ npm run build```
+## Definamos la solución
 
-Además  debemos enlazar el módulo de npm, para poder ejecutarlo en el workspace de la aplicación. 
+Podemos solucionar este problema con Schematics. A la hora de empezar un proyecto, podemos correr un schematic que nos cree la estructura, ¡y problema solucionado!
 
-```$ npm link```
-[Más documentación](https://docs.npmjs.com/cli/link)
 
-Recordemos que esto es un truco para poder ejecutarlo en local, sin publicar el módulo.En la vida real, probablmente usemos
+## Manos a la obra con nuestro schematic
 
-```$ ng add [moduleName]```
+Recuerden que lo primero que debemos hacer, es comprobar que verdaderamente estamos en un proyecto Angular, ya que si no, no debería ejecutarse el Schematic.
 
-Eejecutemos nuestro schematic con el comando
+En segundo lugar, debemos generar el nuevo schematic para modificar. No hace falta que creemos un nuevo proyecto Schematics, simplemente corramos
 
-```$ ng generate collection:factory```
+```$ schematics blank --name=crear-estructuras``` a nivel raiz de nuestro schematic existente.
 
-en nuestro caso
+¡Observen cómo se ha actualizado la colección!
 
-```$ ng generate miSchematicPaisa:miSchematicCustom```
+## Diagrama de ejecución del schematic
 
-## Tarea
+Observen este flujo de ejecución. Así es como se ejecuta el schematic al generar ficheros.
 
-1. Revisa los artefactos generados
+Esto les ayudará a intentar resolver el problema solos, aunque lo resolveremos juntos más tarde.
+
+Pueden también volver a las lecciones 7 y 8, para refrescar la memoria en cuanto a la API disponible
+
+### Recuerden lo que tienen que lograr
+
+- Tenemos que crear una estructura estandarizada para todos nuestros proyectos
+- Esta estructura debe generarse en src/app/{name}
+- Debemos utlizar al menos una de los metodos de cadenas de template y la sintaxis de template en uno de los templates
+- Debemos implementar la estrategia de mergeado
+
+A partir de aquí les propongo intentar solucionar el problema solos.
+
+¡Luego, lo resolveremos juntos!
