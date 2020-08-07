@@ -26,5 +26,11 @@ En el gist de ejemplo se ve como se encadenan 3 schematics. Nuestro schematic en
 
 ## Tarea 
 
-1. Escribe tu propia cadena de schematics usando un schematic externo de Angular. Ejecutalo.
+Haz checkout de la rama `feature/leccion15-estilos` donde ya combinamos schematics para mejorar el resultado del de la lección anterior. 
+
+1. Analiza los cambios del nuevo schematic
+
+2. Escribe tu propia cadena de schematics usando un schematic externo de Angular. Ejecutalo.
+
+3. Haz check-out de la rama `feature/leccion16`. Ejecuta el nuevo schematic siguiendo las instrucciones del readme
  
