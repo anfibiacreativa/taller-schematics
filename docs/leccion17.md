@@ -18,24 +18,52 @@ slugs: publicar-librerias-en-npm-schematics-ng-add
 
  ## Repasemos conocimientos de npm
 
- ttt
+ npm como su nombre lo indica, es un gestor de paquetes o modulos node desde una infrastructura para alojar artefactos de 3eros, de manera versionada, e instalarlos y ejecutarlos de manera local
+
+ Para poder utilizarlo en nuestro desarrollo, debemos tener instalado su CLI en nuestro sistema. El mismo nos permite correr comando para, precisamente, instalar, ejecutar, actualizar, etc, los paquetes en nuestro ordenador
 
  ## Versionado semántico
 
- ttt
+ Los paquetes node se versionan, lo que permiten a los desarrolladores continuar trabajando en ellos y lanzar nuevas versiones, sin `romper` los proyectos existentes que les utilizan. 
+
+ Para publicar librerías, es preciso estar familiarizados con el concepto de versionando semantico.
+
+ Podrás encontrar más información, [en este enlace](https://semver.org/lang/es/)
 
  ## Escribamos la librería
  
- ttt
+Pues la librería ya la hemos escrito! Es nuestro schematic para normalizar estructuras y reubicar los imports de estilos! Pero recuerda que solo hemos podido ejecutarla en un proyecto Angular, porque habiamos realizado un enlace (symlink) a nivel local
 
- ## Publiquemos la librería
+Ahora, la vamos a publicar. Pero para ello Debemos adaptarla un poco, agregando soporte para `ng add``
 
- ttt
+Haz check-out de la rama `feature/leccion17` para ver cómo.
 
- ## Instalemos la librería
+Básicamente al ejecutar `ng-add`, el CLI buscará una factria con ese nombre, para proceder a la instalación de ese paquete. Además ejecutará todo el código correspondiente, generando los artefactos necesarios, a la vez que instala dependencias.
 
- ttt
+## Publiquemos la librería
+
+Para publicar la librería, necesitas una cuenta `npm`. Era un prerequisito de este taller. 
+
+Identificate y empezemos.
+
+## Instalemos la librería
+
+Una vez publicada, tu librería estará disponible en el repositorio público de npm para instalar con `ng add``
+
+### Una nota sobre scoping
+
+Los paquetes actuales muchas veces están sujetos a un scope y a un registro, sobre todo los de organizaciones privadas. Puedes apreder sobre scoping y registries, [en este enlace](https://docs.npmjs.com/about-scopes) y [este enlace](https://docs.npmjs.com/using-npm/registry.html)
 
  ## ¡Escribe tu propia librería!
 
- ttt
+ Este taller ha llegado a su fin, pero ahora te corresponde poner a prueba los conocimientos adquiridos, para ganar práctica.
+
+ Recuerda que es muy importante practicar. Es la mejor manera de consolidar conocimientos y ganar experiencia!
+
+ Espero que te haya gustado el taller.
+
+ Puedes contactar conmigo en
+
+[Twitter - Anfibiacreativa](https://www.twitter.com/anfibiacreativa)
+
+o por email [mail:to](nataliafrontend@gmail.com)
