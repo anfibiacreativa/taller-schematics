@@ -36,6 +36,9 @@ El método apply() nos permite aplicar multiples reglas (rules) a una base, y no
 
 El método url() lee la base en sistema de archivos, de forma relativa al schematic que se ejecuta
 
+## template()
+
+
 ### applyTemplates()
 
 El método applyTemplates() toma como argumentos los métodos que quieras pasar al schematic, y los nombres de los ficheros que componen el schematic y devuelve un `Rule`. 
@@ -50,9 +53,17 @@ El método move() mueve la base de archivos a su destino final, cuando se ejecut
 
 Este método significa `no operation` y por supuesto, sirve para indicar que no se realizará ninguna operación
 
-## Utilidades de cadena
+## Utilidades de cadena (templates)
 
-Las utilidades de cadena nos ayudan a normalizar definiciones y a imponer convenciones. Por ejemplo, cuando trabajamos en equipos grandes y queremos que los componentes, modulos, etc, digan un patrón en su nombrado. 
+Las utilidades de cadena nos ayudan a normalizar definiciones y a imponer convenciones. Por ejemplo, cuando trabajamos en equipos grandes y queremos que los componentes, modulos, etc, digan un patrón en su nombrado.
+
+Lo mejor de estas utilidades es que están disponibles en los templates directamente, sin importar nada (aunque si debemos importarlas a la lógica en el RuleFactory). 
+
+Se pueden incluso encadenar sin limite de esta manera al crear estructuras de scaffold
+
+`__name@dasherize__`
+
+donde `__` actuan como delimitador por defecto, y `@` indica que concatenaremos métodos
 
 ### dasherize()
 
