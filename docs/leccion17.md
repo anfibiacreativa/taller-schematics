@@ -38,6 +38,40 @@ Ahora, la vamos a publicar. Pero para ello Debemos adaptarla un poco, agregando 
 
 Haz check-out de la rama `feature/leccion17` para ver cómo.
 
+## Pasos
+
+1. Crea una nueva app con
+```ng new ng-add-lib``` 
+(No le agregues router y elige SCSS como preprocesador de estilos)
+
+2. Al mismo nivel de `src` crea una carpeta `lib` y otra `schematics`
+
+3. Dentro de `lib` genera un módulo corriendo `ng generate module entry`. Es simplemente para tener una entrada a la librería. También crea un fichero llamado `public_api.ts`, tal como establece la convención para librerías de Angular. Exporta el módulo a ese fichero, como se ve [aquí](https://github.com/anfibiacreativa/ng-add-lib/blob/develop/lib/public_api.ts)
+
+4. Instala las siguientes dependencias: `ng packagr` y `cpr`. La primera es una utlidad que nos facilitará el empaquetado. La segunda nos ayudará a copiar el código a la carpeta de distribución.
+
+5. Ahora copia los schematics `agregar-alias`y `actualizar-configuracion`, desde el schematics tal como está en la rama `feature/leccion17`.
+
+6. Haz checkout de `develop` para este [repo](https://github.com/anfibiacreativa/ng-add-lib)
+
+7. Debemos actualizar la collection.json, tal y como se ve [aquí](https://github.com/anfibiacreativa/ng-add-lib/blob/develop/schematics/src/collection.json)
+
+8. Por último, vamos a asegurarnos de actualizar el [package.json](https://github.com/anfibiacreativa/ng-add-lib/blob/develop/package.json). Los cambios importantes son:
+
+- la propiedad `schematics`, que apunta a la colección
+- la propiedad `ngPackage` que sirve a `ngPackagr`para saber tanto el destino de la distro como el fichero de entrada a la librería
+- fijate en los scripts: ahora tenemos unos scripts nuevos para instalar y compilar los schematics, así como para copiar el código transpilado, a la distro
+
+9. Ahora crearemos un schematic nuevo en nuestra colección, al que llamaremos `ng-add`. Como puedes ver [aqui](https://github.com/anfibiacreativa/ng-add-lib/blob/develop/schematics/src/ng-add/index.ts), lo que hacemos es crear una función de instalación, y luego la encadenamos al schematic que reconfigura la applicación
+
+10. Primero haremos un `npm install`a nivel de los schematics, y luego nos iremos a la raíz de la librería, y ejecutaremos `npm run build:lib`, lo que debería hacer un build de los schematics y empaquetar la librería.
+
+Si no hay errores, ya estamos listos para irnos a una app de prueba y correr 
+
+```ng add ../ng-add-lib/dist/lib```
+
+🌟🌟🌟🌟🌟🌟🌟
+
 Básicamente al ejecutar `ng-add`, el CLI buscará una factoria con ese nombre, para proceder a la instalación de ese paquete.
 
 Además ejecutará todo el código correspondiente del schematic (o los schematics), generando los artefactos necesarios, a la vez que instala dependencias.
@@ -48,9 +82,36 @@ Para publicar la librería, necesitas una cuenta `npm`. Era un prerequisito de e
 
 Identificate y empezemos.
 
+Primero debes remover la propiedad 
+
+``` "private": true,```
+del package.json
+
+Además vamos a hacer la release de la versión 0.0.1, por lo tanto, debemos cambiarla.
+
+```npm version 0.0.1```
+
+En segundo lugar, le vamos a dar un scope. En mi caso, yo he cambiado el nombre de la librería a
+
+`@anfibiacreativa/learn-add-schematics`
+
+Ahora vamos a publicar con
+
+`npm publish --access public`
+
+### .npmignore file
+
+A tener muy en cuenta es la configuración de .npmignore para el paquete de schematics, ya que los javascripts deben subirse al paquete!
+
+También ten en cuenta que `npm` pasará por alto tus reglas de `.gitignore` si encuentra un `.npmignore`, así que si no quieres publicar miles de ficheros, agrega `node_modules` a tu `.npmignore``
+
+[.npmignore](https://github.com/anfibiacreativa/ng-add-lib/blob/develop/schematics/.npmignore)
+
+🌟🌟🌟🌟🌟🌟🌟
+
 ## Instalemos la librería
 
-Una vez publicada, tu librería estará disponible en el repositorio público de npm para instalar con `ng add``
+Una vez publicada, tu librería estará disponible en el repositorio público de npm para instalar con `ng add`
 
 ### Una nota sobre scoping
 
