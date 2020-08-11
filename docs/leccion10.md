@@ -40,7 +40,7 @@ Busquemos en la carpeta donde ejecutamos el schematic.
 
 Podemos ver que tenemos un nuevo paquete npm, con el nombre del schematic creado
 
-### Tarea 1
+### Tarea
 
 Inspecciona y familirizate con el contenido de la carpeta. 
 

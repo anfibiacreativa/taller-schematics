@@ -46,7 +46,7 @@ Los aliases son, como siempre en desarrollo, una cadena de texto alternativo (us
 
 Cada schematic puede tener uno o varios aliases, que se declaran en la propiedad `aliases` del schema, en forma de arreglo 
 
-```"aliases": [rico]````
+```"aliases": [rico]```
 
 ## schema.json
 

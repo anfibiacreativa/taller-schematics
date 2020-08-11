@@ -103,7 +103,7 @@ Ahora vamos a publicar con
 
 A tener muy en cuenta es la configuración de .npmignore para el paquete de schematics, ya que los javascripts deben subirse al paquete!
 
-También ten en cuenta que `npm` pasará por alto tus reglas de `.gitignore` si encuentra un `.npmignore`, así que si no quieres publicar miles de ficheros, agrega `node_modules` a tu `.npmignore``
+También ten en cuenta que `npm` pasará por alto tus reglas de `.gitignore` si encuentra un `.npmignore`, así que si no quieres publicar miles de ficheros, agrega `node_modules` a tu `.npmignore`
 
 [.npmignore](https://github.com/anfibiacreativa/ng-add-lib/blob/develop/schematics/.npmignore)
 
@@ -117,15 +117,15 @@ Una vez publicada, tu librería estará disponible en el repositorio público de
 
 Los paquetes actuales muchas veces están sujetos a un scope y a un registro, sobre todo los de organizaciones privadas. Puedes apreder sobre scoping y registries, [en este enlace](https://docs.npmjs.com/about-scopes) y [este enlace](https://docs.npmjs.com/using-npm/registry.html)
 
- ## ¡Escribe tu propia librería!
+## ¡Escribe tu propia librería!
 
- Este taller ha llegado a su fin, pero ahora te corresponde poner a prueba los conocimientos adquiridos, para ganar práctica.
+Este taller ha llegado a su fin, pero ahora te corresponde poner a prueba los conocimientos adquiridos, para ganar práctica.
 
- Recuerda que es muy importante practicar. Es la mejor manera de consolidar conocimientos y ganar experiencia!
+Recuerda que es muy importante practicar. Es la mejor manera de consolidar conocimientos y ganar experiencia!
 
- Espero que te haya gustado el taller.
+Espero que te haya gustado el taller.
 
- Puedes contactar conmigo en
+Puedes contactar conmigo en
 
 [Twitter - Anfibiacreativa](https://www.twitter.com/anfibiacreativa)
 

@@ -10,7 +10,7 @@ slugs: CLI-schematics-add-generate-update
 
 ## ng add
 
-```ng add <collection> [options]````
+```ng add <collection> [options]```
 
 Le da soporte a librerías de terceros, dentro de un workspace. 
 
@@ -27,7 +27,7 @@ que nos permite pasar un registro alternativo al paquete
 
 ## ng generate
 
-```ng generate <schematic> [options]````
+```ng generate <schematic> [options]```
 
 Este comando genera ficheros o modifica el workspace, basado en el schematic que se le pase.
 

@@ -10,7 +10,7 @@ slugs: API-schematics
 
 Además de las aciones, la API de Schematics nos provee de una gran cantidad de métodos y utilidades, para modificar o transformar nuestro workspace de Angular.
 
- Vamos a ver estos métodos de manera práctica durante los ejercicios, pero entendamos su teoría.
+Vamos a ver estos métodos de manera práctica durante los ejercicios, pero entendamos su teoría.
 
 ## Métodos para leer el file system
 
