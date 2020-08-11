@@ -16,4 +16,6 @@ Eso quiere decir que es una herramienta de flujo de trabajo que utiliza código 
 
 ## ¿Qué tecnología hay por debajo?
 
-Schematics abstrae node, ya que necesita acceder al sistema de archivos del ordenador/sistema donde se ejecute. .
+Schematics abstrae la API de [file system](https://nodejs.org/api/fs.html) de [node.js](https://nodejs.org/es/), ya que necesita acceder al sistema de archivos del ordenador/sistema donde se ejecute y modificarlo.
+
+

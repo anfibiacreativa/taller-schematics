@@ -20,7 +20,7 @@ Se hace referencia al schema.json, mediante la propiedad "schema" para cada elem
 
 ## Tipos
 
-Los argumentos pueden tener todos los tipos `numbe`, `integer`, `string`, `boolean`, etc o incluso se puede definir un `enum` con su correspondiente sub-tipo
+Los argumentos pueden tener los tipos `number`, `integer`, `string`, que se corresponden con el tipo de `textual input`, el  `boolean`, que se corresponde con el tipo `confirmation` y el  `enum` que se corresponde con el `list`
 
 ## Modelo o declaración
 
@@ -35,14 +35,6 @@ Una de las utilidades de tener un schema de validación, es el asegurarnos que l
 Podemos establecer la obligatoriedad de pasar ciertos parámetros al correr un schematic, utilizando el esquema de validación.
 
 Por ejemplo, en el caso del nombre del fichero o path, de la lección 11.
-
-## Aliases
-
-Los aliases son, como siempre en desarrollo, una cadena de texto alternativo (usualmente más corta y más fácil de recordar), para invocar la ejecución de un comando.
-
-Cada schematic puede tener uno o varios aliases, que se declaran en la propiedad `aliases` del schema, en forma de arreglo 
-
-```"aliases": [rico]````
 
 
 ## Tarea 
@@ -59,7 +51,7 @@ El mensaje `Debo mostrar este mensaje` no se ha impreso en la consola.
 
 Ahora corre 
 
-```$ schematics .:mi-schematic-paisa --path=medellin --message```
+```$ schematics .:mi-schematic-paisa --path=medellin --showMessage```
 
 ¿Qué ha cambiado?
 

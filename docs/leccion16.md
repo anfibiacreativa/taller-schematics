@@ -24,6 +24,10 @@ En el gist de ejemplo se ve como se encadenan 3 schematics. Nuestro schematic en
 
 <script src="https://gist.github.com/anfibiacreativa/b2bb69cb0bd34d95f0b328ef26b754a7.js"></script>
 
+## Opciones compartidas entre schematics
+
+Tienes que tener en cuenta que, si combinas o encadenas schematics, que usan las mismas opciones y estas son obligatorias o necesarias para ejecutar la lógica, las debes requerir en el primer schematic que se ejecuta
+
 ## Tarea 
 
 Haz checkout de la rama `feature/leccion15-estilos` donde ya combinamos schematics para mejorar el resultado del de la lección anterior. 

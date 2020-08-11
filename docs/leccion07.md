@@ -12,7 +12,9 @@ Además de las aciones, la API de Schematics nos provee de una gran cantidad de 
 
  Vamos a ver estos métodos de manera práctica durante los ejercicios, pero entendamos su teoría.
 
-## Métodos para leer el workspace
+## Métodos para leer el file system
+
+Estos métodos se ejecutan en el árbol real, no el virtual. Nos permiten iterar y obtener información sobre ficheros existentes
 
 ## getDir()
 
@@ -21,6 +23,10 @@ Este método nos permite obtener un directorio en el workspace
 ## get()
 
 Nos permite tener acceso a un fichero del workspace.
+
+## visit()
+
+Nos permite recorrer el árbol y visitar cada archivo para leerlo, modificarlo, etc
 
 ## read()
 
@@ -38,12 +44,13 @@ El método url() lee la base en sistema de archivos, de forma relativa al schema
 
 ## template()
 
+El método template() es una función que toma opciones, y devuelve un `Rule`
 
 ### applyTemplates()
 
 El método applyTemplates() toma como argumentos los métodos que quieras pasar al schematic, y los nombres de los ficheros que componen el schematic y devuelve un `Rule`. 
 
-Si quieres implementar utilidades de cadena como classify() o dasherize(), lo harás a través de este método
+Si quieres implementar utilidades de cadena como classify() o dasherize(), lo harás a través de estos dos métodos
 
 ### move()
 

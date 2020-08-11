@@ -38,7 +38,15 @@ La transformación más atómica que se le puede hacer a un árbol
 
 ## collection.json
 
-Conjunto de definiciones de uno o varios schematics
+Conjunto de definiciones de uno o varios schematics, donde encontramos las declaraciones de valores para la descripción, la factoria (o punto de entrada del schematic), el enlace a su esquema de validación y sus aliases.
+
+### Aliases
+
+Los aliases son, como siempre en desarrollo, una cadena de texto alternativo (usualmente más corta y más fácil de recordar), para invocar la ejecución de un comando.
+
+Cada schematic puede tener uno o varios aliases, que se declaran en la propiedad `aliases` del schema, en forma de arreglo 
+
+```"aliases": [rico]````
 
 ## schema.json
 
