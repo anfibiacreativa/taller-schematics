@@ -10,9 +10,9 @@ slugs: vocabulario-schematics
 
 ## ./files
 
-(Tree o source), es el sistema de archivos VIRTUAL, compuesto de la base (los archivos que existen) y el area de staging (donde ocurren las transformaciones).
+(Tree o source), es el sistema de archivos VIRTUAL, compuesto de la base (los archivos que existen, o sea eso que es identico a nuestro sistema de archivos físico) y el área de staging (donde ocurren las transformaciones, las acciones).
 
-En realidad, cuando creamos archivos para ser copiados por nuesro schematic, creamos una carpeta `/files` en la raíz del schematic. La llamamos así porque el compilador ignora esa carpeta, pero podemos llamarla de cualquier manera, siempre y cuando reconfiguremos el compilador para que la ignore
+Cuando queremos crear nuevos archivos, debemos creamos una carpeta `/files` en la raíz del schematic. La llamamos así porque el compilador ignora esa carpeta, pero podemos llamarla de cualquier manera, siempre y cuando reconfiguremos el compilador para que la ignore, mediante la propiedad `exclude` del fichero `tsconfig` 
 
 ## Rule{}
 

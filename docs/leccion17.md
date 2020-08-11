@@ -38,7 +38,9 @@ Ahora, la vamos a publicar. Pero para ello Debemos adaptarla un poco, agregando 
 
 Haz check-out de la rama `feature/leccion17` para ver cómo.
 
-Básicamente al ejecutar `ng-add`, el CLI buscará una factria con ese nombre, para proceder a la instalación de ese paquete. Además ejecutará todo el código correspondiente, generando los artefactos necesarios, a la vez que instala dependencias.
+Básicamente al ejecutar `ng-add`, el CLI buscará una factoria con ese nombre, para proceder a la instalación de ese paquete.
+
+Además ejecutará todo el código correspondiente del schematic (o los schematics), generando los artefactos necesarios, a la vez que instala dependencias.
 
 ## Publiquemos la librería
 
