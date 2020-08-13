@@ -28,6 +28,12 @@ En el gist de ejemplo se ve como se encadenan 3 schematics. Nuestro schematic en
 
 Tienes que tener en cuenta que, si combinas o encadenas schematics, que usan las mismas opciones y estas son obligatorias o necesarias para ejecutar la lógica, las debes requerir en el primer schematic que se ejecuta
 
+## Orden de ejecución
+
+También debes tener en cuenta el orden de ejecución de los schematics encadenados
+
+![Orden de ejecución de los schematics encadenados](https://res.cloudinary.com/anfibiacreativa/image/upload/v1597346712/taller-schematics/lifecycle_qz0rxi.jpg "Orden de ejecución de los schematics encadenados")
+
 ## Tarea 
 
 Haz checkout de la rama `feature/leccion15-estilos` donde ya combinamos schematics para mejorar el resultado del de la lección anterior. 

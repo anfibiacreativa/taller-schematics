@@ -50,6 +50,7 @@ A partir de aquí les propongo intentar solucionar el problema solos.
 
 ¡Luego, lo resolveremos juntos!
 
+
 ## Tarea
 
 Una vez hayamos terminado de resolver el ejercicio juntos, puedes hacer check-out de la rama `feature/leccion15`, para examinar el código.

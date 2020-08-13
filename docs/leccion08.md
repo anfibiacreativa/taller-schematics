@@ -34,3 +34,4 @@ Hasta aquí algunos de los métodos a nuestra disposición, para operar con Sche
 
 Puedes volver a estas lecciones, cuando estés intentando resolver los ejercicios ;)
 
+<script src="https://gist.github.com/anfibiacreativa/26b4605781cd3ef9e939c569d0bfb1e8.js"></script>

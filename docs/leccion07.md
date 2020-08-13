@@ -106,6 +106,18 @@ Este método toma un valor de cadena y nos devuelve el mismo valor con guiones b
 
 Por ejemplo si le pasaramos `ng conf co` nos devolvería `ng_conf_co`
 
+# Sintaxis de templates
+
+Schematics también nos permite implementar la sintaxis de templates de manera muy flexible, por ejemplo:
+
+<script src="https://gist.github.com/anfibiacreativa/498f96f98ee7c98bd8a25712051d9da8.js"></script>
+
+Este código es parte de la implementación del schematic `service` del CLI. De esta manera, el servicio recible el nombre que se pasa como opción
+
+Otro uso muy interesante de la sintaxis es directamente en los templates, lo que nos permite el  acceso a los metodos de utilidades de cadena, pero también a cualquier otra función custom que creemos, y que pasemos al método template, como se ve en el ejemplo
+
+<script src="https://gist.github.com/anfibiacreativa/b47cfc3caffde60eb58b5ca7418c1bc0.js"></script>
+
 ## Logging
 
 Un aspecto importante a la hora de desarrollar, pero también a la hora de ejecutar comandos a nivel usuario,  es la habilidad de obtener información o errores, también a través de la consola.

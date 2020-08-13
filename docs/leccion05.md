@@ -26,4 +26,5 @@ Por ejemplo, cuando creamos ficheros, la acción de crear físicamente los archi
 
 Es decir, ocurre así:
 
+![Schemtics transformaciones aplicadas en el stage](https://res.cloudinary.com/anfibiacreativa/image/upload/v1597346727/taller-schematics/Edit__De_0_a_crear_tu_publicar_tu_propia_libreri%CC%81a__con_Angular_Schematics_akcjef.jpg "Schemtics transformaciones aplicadas en el stage")
 

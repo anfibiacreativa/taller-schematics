@@ -40,6 +40,8 @@ Busquemos en la carpeta donde ejecutamos el schematic.
 
 Podemos ver que tenemos un nuevo paquete npm, con el nombre del schematic creado
 
+![Paquete schematic blank](https://res.cloudinary.com/anfibiacreativa/image/upload/v1597347769/taller-schematics/contenidopaquete_udaeaw.jpg "paquete schematic blank")
+
 ### Tarea
 
 Inspecciona y familirizate con el contenido de la carpeta. 

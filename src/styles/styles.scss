@@ -53,12 +53,8 @@ img {
 .body {
   &__base {
     max-width: 100%;
-
-    a:link,
-    a:visited,
-    a:active {
-      color: #ce00d1;
-    }
+    margin: 0;
+    padding: 0;
   }
   &__innerWrapper {
     display: grid;
@@ -150,11 +146,40 @@ img {
 
 .sidenav { grid-area: sidenav; }
 
+.footer {
+  &__base {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #000000;
+    color: #e8e9f5;
+    height: 70px;
+
+    p {
+      padding: 15px 0;
+      max-width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: monospace;
+
+      a {
+        color: #efc4ef;
+      }
+    }
+  }
+}
+
 .main { 
-  grid-area: main; 
+  grid-area: main;
 
   &__base {
     margin-top: 50px;
+
+    a:link,
+    a:visited,
+    a:active {
+      color: #ca07ca;
+    }
   }
 }
 
