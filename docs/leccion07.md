@@ -18,7 +18,9 @@ Estos métodos se ejecutan en el árbol real, no el virtual. Nos permiten iterar
 
 ## getDir()
 
-Este método nos permite obtener un directorio en el workspace
+Este método nos permite obtener un directorio en el workspace o host
+
+<script src="https://gist.github.com/anfibiacreativa/618a63bbdd7d72ee66e4a3f233dd563c.js"></script>
 
 ## get()
 
@@ -28,9 +30,13 @@ Nos permite tener acceso a un fichero del workspace.
 
 Nos permite recorrer el árbol y visitar cada archivo para leerlo, modificarlo, etc
 
+<script src="https://gist.github.com/anfibiacreativa/8b277616bfc5a7b37e51491a42a4af2b.js"></script>
+
 ## read()
 
 Nos permite leer el contenido de fichero en el workspace. Nos devuelve un Buffer del mismo.
+
+<script src="https://gist.github.com/anfibiacreativa/d51da84a73a3f58a882e91119adfcdde.js"></script>
 
 ## Métodos para transformar el árbol
 
@@ -42,7 +48,7 @@ El método apply() nos permite aplicar multiples reglas (rules) a una base, y no
 
 El método url() lee la base en sistema de archivos, de forma relativa al schematic que se ejecuta
 
-### applyTemplates()
+### applyTemplates() | template()
 
 El método applyTemplates() toma como argumentos los métodos que quieras pasar al schematic, y los nombres de los ficheros que componen el schematic y devuelve un `Rule`. 
 
@@ -51,6 +57,8 @@ Si quieres implementar utilidades de cadena como classify() o dasherize(), lo ha
 ### move()
 
 El método move() mueve la base de archivos a su destino final, cuando se ejecuta el schematic
+
+<script src="https://gist.github.com/anfibiacreativa/3d99fea8e095fce247ebc47b7c43dd2a.js"></script>
 
 ### noop()
 

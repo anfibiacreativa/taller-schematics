@@ -77,3 +77,11 @@ Además, debes tener una cuenta GitHub, y una cuenta npm.
 Yo opero en un sistema macOS 10.15.4. Aunque me gustaría,para no interrumpir el flujo del taller, no podré resolver problemas derivados de especificidades de otros sistemas, como Linux o Windows, ni podré enseñarte otros conocimientos básicos de Typescript, bash, o node.
 
 ### ¡Adelante!
+
+Empecemos por clonar este repositorio, para tenerlo pronto para trabajar!
+
+[Schematics Paisa](https://github.com/anfibiacreativa/mi-schematic-paisa)
+
+Este repo tiene varias feature branches, donde se va resolviendo cada ejercicio.
+
+Te recomiendo que primero intentes hacerlo conmigo, y al final hagas checkout de la branch

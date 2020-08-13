@@ -63,6 +63,8 @@ Haz check-out de la rama `feature/leccion17` para ver cómo.
 - fijate en los scripts: ahora tenemos unos scripts nuevos para instalar y compilar los schematics, así como para copiar el código transpilado, a la distro
 - la configuración para la compilación del typescript de los schematics, debe indicar tanto el directorio de entrada, como en el de salida, (`rootDir` and `outDir`)
 
+
+
 9. Ahora crearemos un schematic nuevo en nuestra colección, al que llamaremos `ng-add`. Como puedes ver [aqui](https://github.com/anfibiacreativa/ng-add-lib/blob/develop/schematics/src/ng-add/index.ts), lo que hacemos es crear una función de instalación, y luego la encadenamos al schematic que reconfigura la applicación
 
 La función de instalación implementa 
