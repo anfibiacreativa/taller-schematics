@@ -50,7 +50,7 @@ Haz check-out de la rama `feature/leccion17` para ver cómo.
 
 4. Instala las siguientes dependencias: `ng packagr` y `cpr`. La primera es una utlidad que nos facilitará el empaquetado. La segunda nos ayudará a copiar el código a la carpeta de distribución.
 
-5. Ahora copia los schematics `agregar-alias`y `actualizar-configuracion`, desde el schematics tal como está en la rama `feature/leccion17`.
+5. Ahora copia los schematics `agregar-alias` y `actualizar-configuracion`, desde el schematics tal como está en la rama `feature/leccion17`.
 
 6. Haz checkout de `develop` para este [repo](https://github.com/anfibiacreativa/ng-add-lib)
 
@@ -61,8 +61,26 @@ Haz check-out de la rama `feature/leccion17` para ver cómo.
 - la propiedad `schematics`, que apunta a la colección
 - la propiedad `ngPackage` que sirve a `ngPackagr`para saber tanto el destino de la distro como el fichero de entrada a la librería
 - fijate en los scripts: ahora tenemos unos scripts nuevos para instalar y compilar los schematics, así como para copiar el código transpilado, a la distro
+- la configuración para la compilación del typescript de los schematics, debe indicar tanto el directorio de entrada, como en el de salida, (`rootDir` and `outDir`)
 
 9. Ahora crearemos un schematic nuevo en nuestra colección, al que llamaremos `ng-add`. Como puedes ver [aqui](https://github.com/anfibiacreativa/ng-add-lib/blob/develop/schematics/src/ng-add/index.ts), lo que hacemos es crear una función de instalación, y luego la encadenamos al schematic que reconfigura la applicación
+
+La función de instalación implementa 
+
+```import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';```
+
+la función de instalación de node para paquetes, en el contexto
+
+```context.addTask(new NodePackageInstallTask());```
+
+Eso es lo mínimo que hay que hacer, para tener soporte para `ng-add`.
+
+También podemos definir qué tipo de dependencia será nuestra librería, configurando la opción `save` en la propiedad `ng-add` en el package.json, con estos posibles valores
+
+- false,  no se agrega al package.json
+- true or "dependencies",  agrega el paquete a las dependencies
+- "devDependencies" - agrega el paquete a las devDependencies
+
 
 10. Primero haremos un `npm install`a nivel de los schematics, y luego nos iremos a la raíz de la librería, y ejecutaremos `npm run build:lib`, lo que debería hacer un build de los schematics y empaquetar la librería.
 

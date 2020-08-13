@@ -42,10 +42,6 @@ El método apply() nos permite aplicar multiples reglas (rules) a una base, y no
 
 El método url() lee la base en sistema de archivos, de forma relativa al schematic que se ejecuta
 
-## template()
-
-El método template() es una función que toma opciones, y devuelve un `Rule`
-
 ### applyTemplates()
 
 El método applyTemplates() toma como argumentos los métodos que quieras pasar al schematic, y los nombres de los ficheros que componen el schematic y devuelve un `Rule`. 

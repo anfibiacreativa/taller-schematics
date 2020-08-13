@@ -12,10 +12,7 @@ slugs: que-es-angular-schematics
 
 Son generadores de código basados en templates pre-escritos.
 
-Eso quiere decir que es una herramienta de flujo de trabajo que utiliza código descriptivo y diagramas AST para generar artefactos, como más código, templates o incluso ficheros en el sistema
+Eso quiere decir que es una herramienta de flujo de trabajo que utiliza código descriptivo para generar artefactos, como más código, templates o incluso ficheros en el sistema
 
-## ¿Qué tecnología hay por debajo?
-
-Schematics abstrae la API de [file system](https://nodejs.org/api/fs.html) de [node.js](https://nodejs.org/es/), ya que necesita acceder al sistema de archivos del ordenador/sistema donde se ejecute y modificarlo.
-
+La API de schematics nos provee de utilidades para trabajar con código TypeScript, diagramas AST, JSON, modulos y dependencias, dentro y fuera de un proyecto Angular
 
