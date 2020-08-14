@@ -27,6 +27,10 @@ Ahora vamos a ejecutar la creación de nuestro primer schematics en blanco. Para
 
 ```$ schematics blank --name=mi-schematic-paisa```
 
+Inmediatamente después haremos un 
+
+```npm install && npm run build```
+
 ## ¿Qué son las opciones?
 
 Las opciones son aquellos parametros que pasamos al schematic cuando lo ejecutamos.
