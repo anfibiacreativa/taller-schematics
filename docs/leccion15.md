@@ -52,6 +52,15 @@ A partir de aquí les propongo intentar solucionar el problema solos.
 
 ¡Luego, lo resolveremos juntos!
 
+### Bug report:
+
+Si tu IDE se queja de no encontrar las utilidades de schematic para angular, o tienes este error en consola,
+
+``` error TS2307: Cannot find module '@schematics/angular/utility/config' or its corresponding type declarations. import { getWorkspace } from '@schematics/angular/utility/config';```
+
+instala los siguientes paquetes localmente al proyecto
+
+```npm install @schematics/angular @schematics/schematics --save-dev```
 
 ## Tarea
 
