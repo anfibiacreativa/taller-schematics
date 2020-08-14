@@ -148,5 +148,3 @@ Puedes contactar conmigo en
 [Twitter - Anfibiacreativa](https://www.twitter.com/anfibiacreativa)
 
 [Github - Anfibiacreativa](https://www.github.com/anfibiacreativa)
-
-o por email [mail:to](nataliafrontend@gmail.com)
