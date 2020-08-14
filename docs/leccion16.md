@@ -38,9 +38,16 @@ También debes tener en cuenta el orden de ejecución de los schematics encadena
 
 Haz checkout de la rama `feature/leccion15-estilos` donde ya combinamos schematics para mejorar el resultado del de la lección anterior. 
 
-1. Analiza los cambios del nuevo schematic
+1. Analicemos los cambios del nuevo schematic.
 
 2. Escribe tu propia cadena de schematics usando un schematic externo de Angular. Ejecutalo.
 
-3. Haz check-out de la rama `feature/leccion16`. Ejecuta el nuevo schematic siguiendo las instrucciones del readme
- 
+3. Haz check-out de la rama `feature/leccion16`. Ejecuta el nuevo schematic con
+
+```ng generate mi-schematic-paisa:moverEstilos --path=medellin --name=medellin```
+
+Aqui estamos usando el alias del schematic `mover-estilos` que es `moverEstilos``
+
+Como verás, da error porque la estructura ya existe.
+
+Intenta con otra ciudad, como `Cali`o `Bogotà` ...¿Se han movido los estilos?`
