@@ -16,6 +16,8 @@ Hasta ahora hemos ejecutado nuestro schematic exclusivamente desde el schematics
 
 ```$  ng new [appName]```
 
+(Elegir no router y scss como preprocesador!)
+
 No debemos olvidar de compilar el paquete de nuestro schematic para que transpilen los cambios, con
 
 ```$ npm run build```
@@ -31,11 +33,11 @@ Recordemos que esto es un truco para poder ejecutarlo en local, sin publicar el 
 
 Eejecutemos nuestro schematic con el comando
 
-```$ ng generate collection:factory```
+```$ ng generate collection:factory --options```
 
 en nuestro caso
 
-```$ ng generate mi-schematic-paisa:mi-schematic-paisa```
+```$ ng generate mi-schematic-paisa:mi-schematic-paisa --path=medellin```
 
 ## Tarea
 

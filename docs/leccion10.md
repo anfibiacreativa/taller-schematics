@@ -16,15 +16,16 @@ Para comenzar, vamos a asegurarnos que nuestro setup está en orden.
 Vamos a comprobar que tenemos instaladas las siguientes dependencias, a nivel global
 
 - node v12.8.0
-- angular (core y cli) v.10
-- schematics
-- rxjs
+- npm v.6.10.2
+- @angular-cli (core y cli) v.10
+- @schematics/angular
+- @schematics/schematics@0.1000.5
 
 ## Generemos el blank schematic con el Schematic CLI
 
 Ahora vamos a ejecutar la creación de nuestro primer schematics en blanco. Para ello abriremos la terminal, y escribiremos
 
-```$ schematics blank --name=miSchematicPaisa```
+```$ schematics blank --name=mi-schematic-paisa```
 
 ## ¿Qué son las opciones?
 
