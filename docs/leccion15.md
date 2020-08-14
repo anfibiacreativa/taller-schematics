@@ -66,4 +66,8 @@ instala los siguientes paquetes localmente al proyecto
 
 Una vez hayamos terminado de resolver el ejercicio juntos, puedes hacer check-out de la rama `feature/leccion15`, para examinar el código.
 
+Ejecutalo desde la aplicación con 
+
+```ng generate mi-schematic-paisa:normalizar-estructura --path=medellin --name=medellin```
+
 Compara con tu solución, o si no lo habías logrado, apunta tus preguntas.
