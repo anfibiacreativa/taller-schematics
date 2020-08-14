@@ -36,8 +36,6 @@ Pues la librería ya la hemos escrito! Es nuestro schematic para normalizar estr
 
 Ahora, la vamos a publicar. Pero para ello Debemos adaptarla un poco, agregando soporte para `ng add``
 
-Haz check-out de la rama `feature/leccion17` para ver cómo.
-
 ## Pasos
 
 1. Crea una nueva app con
@@ -50,7 +48,7 @@ Haz check-out de la rama `feature/leccion17` para ver cómo.
 
 4. Instala las siguientes dependencias: `ng packagr` y `cpr`. La primera es una utlidad que nos facilitará el empaquetado. La segunda nos ayudará a copiar el código a la carpeta de distribución.
 
-5. Ahora copia los schematics `agregar-alias` y `actualizar-configuracion`, desde el schematics tal como está en la rama `feature/leccion17`.
+5. Ahora copia los schematics `agregar-alias` y `actualizar-configuracion`, desde el schematics tal como está en la rama `feature/leccion16-reconfigurar`.
 
 6. Haz checkout de `develop` para este [repo](https://github.com/anfibiacreativa/ng-add-lib)
 
