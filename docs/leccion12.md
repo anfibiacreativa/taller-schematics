@@ -35,7 +35,7 @@ Eejecutemos nuestro schematic con el comando
 
 en nuestro caso
 
-```$ ng generate miSchematicPaisa:miSchematicPaisa```
+```$ ng generate mi-schematic-paisa:mi-schematic-paisa```
 
 ## Tarea
 

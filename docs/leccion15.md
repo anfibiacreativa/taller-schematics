@@ -35,6 +35,8 @@ En segundo lugar, debemos generar el nuevo schematic para modificar. No hace fal
 
 Observen este flujo de ejecución. Así es como se ejecuta el schematic al generar ficheros.
 
+![Diagrama de ejecución Schematics](https://res.cloudinary.com/anfibiacreativa/image/upload/v1597346727/taller-schematics/Edit__De_0_a_crear_tu_publicar_tu_propia_libreri%CC%81a__con_Angular_Schematics_akcjef.jpg "Flujo de ejecución schematics")
+
 Esto les ayudará a intentar resolver el problema solos, aunque lo resolveremos juntos más tarde.
 
 Pueden también volver a las lecciones 7 y 8, para refrescar la memoria en cuanto a la API disponible
