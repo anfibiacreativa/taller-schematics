@@ -18,5 +18,3 @@ La implementación para cada tipo de acción se puede encontrar en
 
 [Implementación action.js](node_modules/@angular-devkit/schematics/src/tree/action.js)
 
-
-!!!! Embed images here
