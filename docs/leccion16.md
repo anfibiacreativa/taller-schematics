@@ -51,3 +51,11 @@ Aqui estamos usando el alias del schematic `mover-estilos` que es `moverEstilos`
 Como verás, da error porque la estructura ya existe.
 
 Intenta con otra ciudad, como `Cali`o `Bogotà` ...¿Se han movido los estilos?`
+
+Ahora has checkout de la branch `feature/leccion16-reconfigurar``
+
+y ejecuta simplemente 
+
+```ng generate mi-schematic-paisa:reconfig````
+
+¡Sigue los prompts!
