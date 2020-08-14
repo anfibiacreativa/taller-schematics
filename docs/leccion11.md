@@ -40,7 +40,7 @@ Primero que nada debemos compilar y transpilar  nuestro typescript, así que vam
 
 Ahora, vamos a ejecutarlo con el schematics-cli, en la raiz de nuestro schematic, con
 
-```$ schematics .:my-schematic-paisa```
+```$ schematics .:mi-schematic-paisa --path=medellin```
 
 ¿Qué ha pasado? ¡Nada ha cambiado! 
 
@@ -48,6 +48,6 @@ No teman. Es porque Schematic se ejecuta en modo dry-run, o sea, en modo depurac
 
 Vamos a desactivar ese modo, ejecutando
 
-```$ schematics .:my-schematic-paisa --dry-run=false```
+```$ schematics .:my-schematic-paisa --path="medellin" --dry-run=false```
 
 ¡Ahora si! ¡Felicitaciones! ¡Has escrito y ejecutado tu primer schematic!
