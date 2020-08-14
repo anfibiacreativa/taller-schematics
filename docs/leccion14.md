@@ -36,7 +36,15 @@ slugs: escribir-schematics-prompts
 
  Sigue los prompts de la consola.
 
+ ....Un minuto... ¿Qué prompts? Correcto. 
+
+ Los prompts solo se ejecutarán si agregas la propiedad "schema" al schematic, en la coleccion
+
+<script src="https://gist.github.com/anfibiacreativa/8a645a9c330dd1d7068e53e275b30f91.js"></script>
+
  ## Tarea
 
- 1. Escribe tu propio x-prompt en tu schematic. 
+ 1. Agrega el schema a la coleccion
+ 
+ 2. Escribe tu propio x-prompt en tu schematic. 
   
