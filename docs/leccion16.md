@@ -56,6 +56,6 @@ Ahora has checkout de la branch `feature/leccion16-reconfigurar``
 
 y ejecuta simplemente 
 
-```ng generate mi-schematic-paisa:reconfig````
+```ng generate mi-schematic-paisa:reconfig```
 
 ¡Sigue los prompts!
