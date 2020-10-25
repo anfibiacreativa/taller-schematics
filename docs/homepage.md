@@ -85,3 +85,9 @@ Empecemos por clonar este repositorio, para tenerlo pronto para trabajar!
 Este repo tiene varias feature branches, donde se va resolviendo cada ejercicio.
 
 Te recomiendo que primero intentes hacerlo conmigo, y al final hagas checkout de la branch
+
+<a name="cookies"><strong>Cookies</strong></a>
+
+Aunque este sitio no implementa Analytics ni cookies de ningún tipo, es posible que los plugins de terceros usados, incluyendo los snippets de Github Gists, si lo hagan.
+
+Para utilizar el sitio, por favor acepta las cookies.
