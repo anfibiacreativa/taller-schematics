@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
         message: this.cookieMessage,
         dismiss: this.cookieDismiss,
         link: this.cookieLinkText,
-        href: `${cc.location.host}/docs/taller-de-angular-schematics#cookies`
+        href: `https://aprender-angular-schematics/docs/taller-de-angular-schematics#cookies`
       }
     });
   }
