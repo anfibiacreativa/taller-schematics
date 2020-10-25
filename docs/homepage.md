@@ -88,6 +88,6 @@ Te recomiendo que primero intentes hacerlo conmigo, y al final hagas checkout de
 
 <a name="cookies"><strong>Cookies</strong></a>
 
-Aunque este sitio no implementa Analytics ni cookies de ningún tipo, es posible que los plugins de terceros usados, incluyendo los snippets de Github Gists, si lo hagan.
+Este sitio implementa algunas cookies, especialmente de 3eros, y para analizar qué tan útil es la información provista.
 
 Para utilizar el sitio, por favor acepta las cookies.
